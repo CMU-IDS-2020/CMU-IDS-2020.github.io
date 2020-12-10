@@ -19,6 +19,21 @@
   display: inline-block;
   font-size: 16px;
 }
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
 </style>
 
 </head>
@@ -34,7 +49,7 @@
     <p>Fall 2020</p>
 
 
-    <div id="dropdown-div">
+    <div id="dropdown-div" class="custom-select">
         <p>Select your team</p>
 	    <select id="dropdown">
 	            <option value="1">Team holmes-and-watson: Bryce Wilkins, Adam Kratch</option>
