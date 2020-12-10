@@ -9,18 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="chance.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-
-    footer {
-      background-color: #B20000;
-      padding: 25px;
-    }
-  </style>
+  
 </head>
 
 <body>
@@ -35,6 +24,7 @@
 
 
     <div id="dropdown-div">
+        <p>Select your team</p>
 	    <select id="dropdown">
 	            <option value="1">Team holmes-and-watson: Bryce Wilkins, Adam Kratch</option>
 	            <option value="2">Team classification-clarification: Christian Deverall, Laura Howard, Nathan Jen, Juliette Wong</option>
@@ -58,6 +48,8 @@
 	            <option value="20">Team profiler: Haonan Wang, Lichen Jin, Weiyi Zhang, Yijie Zhang</option>
 	            <option value="21">Team lydia: Lydia Schweitzer</option>
 	        </select>
+        <br>
+        <br>
 		<button type="button" onclick="myFunction()">Shuffle Projects</button>
 	</div>
 
@@ -201,34 +193,24 @@
 
 </div>
 <script>
-
-$(document).ready(function() {
-    $('.mdb-select').materialSelect();
-});
-
-var ul = document.querySelector("ol"); // get the list
-var temp = ul.cloneNode(true); // clone the list
+var ul = document.querySelector("ol"); 
+var temp = ul.cloneNode(true);
 
 
 function myFunction() {
     var e = document.getElementById("dropdown");
     var strUser = e.value;
     var chance1 = new Chance(strUser);
-
     var list = document.createElement("ol");
-
     var indices = [...Array(temp.children.length).keys()];
 
     var shuffled_indices = chance1.shuffle(indices);
     nameList = "<li>" + temp.children[0].innerHTML + "</li>";
-    console.log(shuffled_indices);
-	// shuffle the cloned list (better performance)
 	for (var i=0;i<shuffled_indices.length;i++) {
-	    // list.appendChild(temp.children[chance1.random() * i |0]);
 	    nameList = "<li>" + temp.children[shuffled_indices[i]].innerHTML + "</li>";
         list.innerHTML += nameList;
 	}
-	ul.parentNode.replaceChild(list, ul); // copy shuffled back to
+	ul.parentNode.replaceChild(list, ul); 
 
 	document.getElementById('projects').style.display='block';
 	document.getElementById('dropdown-div').style.display='none';
