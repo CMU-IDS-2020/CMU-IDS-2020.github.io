@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="chance.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -63,7 +63,7 @@
 
   </div>
 </div>
-<div class="container-fluid bg-3 text-left">    
+<div class="container-fluid bg-3 text-left">
     <div id="projects" style="display:none;">
         <center>
 
@@ -82,7 +82,7 @@
             <li>
                 <p><h5 style="color:#B20000">Team ni-hao: Xiaoyu Sun, Liyun Tu, Shengli Zhu, Xi Chen</h4></p>
                 <p><a href="https://github.com/CMU-IDS-2020/fp-ni-hao">Github Repo </a> | <a href="">Report </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cQasYLUC_00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/JkfydvUsniI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
@@ -100,7 +100,7 @@
             <li>
                 <p><h5 style="color:#B20000">Team good_or_bad: Tianyi Lin, Yutian Zhao, HongyuanZhang, Ling Zhang</h4></p>
                 <p><a href="https://github.com/CMU-IDS-2020/fp-good_or_bad">Github Repo </a> | <a href="">Report </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cQasYLUC_00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cWFR0H1sK8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
@@ -154,7 +154,7 @@
             <li>
                 <p><h5 style="color:#B20000">Team lyric-visualization: Paulina Davison, Peter Schaldenbrand</h4></p>
                 <p><a href="https://github.com/CMU-IDS-2020/fp-lyric-visualization">Github Repo </a> | <a href="">Report </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cQasYLUC_00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/iQQ272pYOKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
@@ -166,7 +166,7 @@
             <li>
                 <p><h5 style="color:#B20000">Team carambola-of-evolution: Clay Yoo, Ihor Markevych</h4></p>
                 <p><a href="https://github.com/CMU-IDS-2020/fp-carambola-of-evolution">Github Repo </a> | <a href="">Report </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cQasYLUC_00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/zazEW4WGeMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
@@ -178,7 +178,7 @@
             <li>
                 <p><h5 style="color:#B20000">Team stop-forest-fires-at-any-cost: Taylor Sullivan, Arpit Kumar, Sammy Hajomar, Joshua Vargas</h4></p>
                 <p><a href="https://github.com/CMU-IDS-2020/fp-stop_forest_fires_at_any_cost">Github Repo </a> | <a href="">Report </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cQasYLUC_00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/5tH-p-fnzsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
@@ -203,7 +203,7 @@
 <script>
 
 $(document).ready(function() {
-$('.mdb-select').materialSelect();
+    $('.mdb-select').materialSelect();
 });
 
 var ul = document.querySelector("ol"); // get the list
@@ -214,11 +214,11 @@ function myFunction() {
     var e = document.getElementById("dropdown");
     var strUser = e.value;
     var chance1 = new Chance(strUser);
-    
+
     var list = document.createElement("ol");
-    
+
     var indices = [...Array(temp.children.length).keys()];
-    
+
     var shuffled_indices = chance1.shuffle(indices);
     nameList = "<li>" + temp.children[0].innerHTML + "</li>";
     console.log(shuffled_indices);
@@ -232,7 +232,6 @@ function myFunction() {
 
 	document.getElementById('projects').style.display='block';
 	document.getElementById('dropdown-div').style.display='none';
-
 }
 </script>
 </body>
