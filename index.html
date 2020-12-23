@@ -7,34 +7,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="chance.js"></script>
-  <style>
-    .submit-button{  
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    }
-    select {
-      // A reset of styles, including removing the default dropdown arrow
-      appearance: none;
-      // Additional resets for further consistency
-      background-color: transparent;
-      border: none;
-      padding: 0 1em 0 0;
-      margin: 0;
-      width: 100%;
-      font-family: inherit;
-      font-size: inherit;
-      cursor: inherit;
-      line-height: inherit;
-    }
-</style>
-
 </head>
 
 <body>
@@ -47,169 +19,136 @@
     <h3>Final Projects</h3>
     <p>Fall 2020</p>
     <p>Learn more about the class at <a href="https://dig.cmu.edu/ids2020">dig.cmu.edu/ids2020</a>.</p>
-
-
-    <div id="dropdown-div" class="custom-select">
-        <p>Select your team</p>
-	    <select id="dropdown">
-	            <option value="1">Team holmes-and-watson: Bryce Wilkins, Adam Kratch</option>
-	            <option value="2">Team classification-clarification: Christian Deverall, Laura Howard, Nathan Jen, Juliette Wong</option>
-	            <option value="3">Team ni-hao: Xiaoyu Sun, Liyun Tu, Shengli Zhu, Xi Chen</option>
-	            <option value="4">Team panda: Faner Lin, Shuaidong Pan</option>
-	            <option value="5">Team airbnb-rats: Connie Ye, Lukas Hermann, Nur Yildirim, Shravya Bhat</option>
-	            <option value="6">Team good_or_bad: Tianyi Lin, Yutian Zhao, HongyuanZhang, Ling Zhang</option>
-	            <option value="7">Team squirrels-in-my-pants: Vivian Sun, Julie Choi, Asad Sheikh, Mei Leng</option>
-	            <option value="8">Team zhihu: Jiayi Weng, Xinyue Chen, Xuanyi Li, Yeju Zhou</option>
-	            <option value="9">Team hu-giesa-erdolu: Emek Erdolu, Katherine Giesa, Meijie Hu</option>
-	            <option value="10">Team index-out-of-bounds: Chuhan Feng, Jiecheng Xu, Jingyuan Li</option>
-	            <option value="11">Team ctqa: Jeffrey Huang, Aditya Shetty, Yuanyuan Wang, Yuanxin Wang</option>
-	            <option value="12">Team planning-for-the-best: Weiqin Wang, Yifan Song, Seungmyung Lee, Eileen Wang</option>
-	            <option value="13">Team mythbusters: Joseph Koshakow, Vivian Lee, James Mahler, Bradley Warren</option>
-	            <option value="14">Team vectorization: Xinwen Liu, Xinyu Lin, Yuxi Luo, Shaobo Guan</option>
-	            <option value="15">Team lyric-visualization: Paulina Davison, Peter Schaldenbrand</option>
-	            <option value="16">Team null-pointer-1: Ruoxin Huang, Xinyi Xu, Tianyang Zhan, Ziming He</option>
-	            <option value="17">Team carambola-of-evolution: Clay Yoo, Ihor Markevych</option>
-	            <option value="18">Team numpy-tomato-and-potato: Zhanlin Sun, Tong Xiao, Andong Jing, Zixuan Zeng</option>
-	            <option value="19">Team stop-forest-fires-at-any-cost: Taylor Sullivan, Arpit Kumar, Sammy Hajomar, Joshua Vargas</option>
-	            <option value="20">Team profiler: Haonan Wang, Lichen Jin, Weiyi Zhang, Yijie Zhang</option>
-	            <option value="21">Team lydia: Lydia Schweitzer</option>
-	        </select>
-        <br>
-        <br>
-		<button class="submit-button" type="button" onclick="myFunction()">Shuffle Projects</button>
-
-	</div>
-
   </div>
 </div>
 <div class="container-fluid bg-3 text-left">
-    <div id="projects" style="display:none;">
+    <div id="projects">
         <center>
 
         <ol id="something">
-        <li>
-            <p><h5 style="color:#B20000">Team holmes-and-watson: Bryce Wilkins, Adam Kratch</h4></p>
-            <p><a href="https://github.com/CMU-IDS-2020/fp-holmesandwatson">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=210">Feedback </a></p>
-            <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/zssRiSV5Xk0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-        </li>
-            <li>
-                <p><h5 style="color:#B20000">Team classification-clarification: Christian Deverall, Laura Howard, Nathan Jen, Juliette Wong</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-classification_clarification">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=207">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/R43LmLKpGRU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team ni-hao: Xiaoyu Sun, Liyun Tu, Shengli Zhu, Xi Chen</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-ni-hao">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=203">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/JkfydvUsniI" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team panda: Faner Lin, Shuaidong Pan</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-panda">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=216">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/ftd_I-aLrVM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team airbnb-rats: Connie Ye, Lukas Hermann, Nur Yildirim, Shravya Bhat</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-airbnb-rats">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=219">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/q2vYsP4Vli8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
+        	<li>
                 <p><h5 style="color:#B20000">Team good_or_bad: Tianyi Lin, Yutian Zhao, HongyuanZhang, Ling Zhang</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-good_or_bad">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=208">Feedback </a></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-good_or_bad">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-good_or_bad/blob/main/Report.md">Report </a></p>
                 <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/cWFR0H1sK8I" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
                 <p><h5 style="color:#B20000">Team squirrels-in-my-pants: Vivian Sun, Julie Choi, Asad Sheikh, Mei Leng</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-squirrels-in-my-pants">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=221">Feedback </a></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-squirrels-in-my-pants">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-squirrels-in-my-pants/blob/main/Report.md">Report </a></p>
                 <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/P5v0qS6-cE4" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
-                <p><h5 style="color:#B20000">Team zhihu: Jiayi Weng, Xinyue Chen, Xuanyi Li, Yeju Zhou</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-zhihu">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=202">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/RfN-SCBx0ko" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team hu-giesa-erdolu: Emek Erdolu, Katherine Giesa, Meijie Hu</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp_hu_giesa_erdolu">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=213">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/GsRI2XaufaU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team index-out-of-bounds: Chuhan Feng, Jiecheng Xu, Jingyuan Li</h4></p>
-                <p><a href="https://github.com/orgs/CMU-IDS-2020/teams/index-out-of-bounds">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=220">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/7b_nIxPO3Qk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team ctqa: Jeffrey Huang, Aditya Shetty, Yuanyuan Wang, Yuanxin Wang</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-ctqa">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=214">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/bq_zQa00pr0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team planning-for-the-best: Weiqin Wang, Yifan Song, Seungmyung Lee, Eileen Wang</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-planningforthebest">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=205">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/lF8QAU9F19A" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <p><h5 style="color:#B20000">Team panda: Faner Lin, Shuaidong Pan</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-panda">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-panda/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/ftd_I-aLrVM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
                 <p><h5 style="color:#B20000">Team mythbusters: Joseph Koshakow, Vivian Lee, James Mahler, Bradley Warren</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-mythbusters">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=204">Feedback </a></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-mythbusters">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-mythbusters/blob/main/Report.md">Report </a></p>
                 <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/s4qkwLv2RMw" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
-                <p><h5 style="color:#B20000">Team vectorization: Xinwen Liu, Xinyu Lin, Yuxi Luo, Shaobo Guan</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-vectorization">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=218">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/0jUtn4MI9HM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team lyric-visualization: Paulina Davison, Peter Schaldenbrand</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-lyric-visualization">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=206">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/iQQ272pYOKQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team null-pointer-1: Ruoxin Huang, Xinyi Xu, Tianyang Zhan, Ziming He</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-null-pointer-1">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=217">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/Yupw9EFK0v0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team carambola-of-evolution: Clay Yoo, Ihor Markevych</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-carambola-of-evolution">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=212">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/zazEW4WGeMQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team numpy-tomato-and-potato: Zhanlin Sun, Tong Xiao, Andong Jing, Zixuan Zeng</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-numpy_tomato_and_potato">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=215">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/7rRiUwCDvSo" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
-                <p><h5 style="color:#B20000">Team stop-forest-fires-at-any-cost: Taylor Sullivan, Arpit Kumar, Sammy Hajomar, Joshua Vargas</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-stop_forest_fires_at_any_cost">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=209">Feedback </a></p>
-                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/5tH-p-fnzsw" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
-                <hr style="width:50%">
-            </li>
-            <li>
                 <p><h5 style="color:#B20000">Team profiler: Haonan Wang, Lichen Jin, Weiyi Zhang, Yijie Zhang</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/fp-profiler">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=201">Feedback </a></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-profiler">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-profiler/blob/main/Report.pdf">Report </a></p>
                 <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/32f2tAtNMyE" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
             <li>
                 <p><h5 style="color:#B20000">Team lydia: Lydia Schweitzer</h4></p>
-                <p><a href="https://github.com/CMU-IDS-2020/a0-lydiaclaire">Github Repo </a> | <a href="">Report </a> | <a href="https://piazza.com/class/keek529mhd62f7?cid=211">Feedback </a></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-sweetpotato">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-sweetpotato/blob/main/Report.md">Report </a></p>
                 <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/kqUTyYDx6Yk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+	        <li>
+	            <p><h5 style="color:#B20000">Team holmes-and-watson: Bryce Wilkins, Adam Kratch</h4></p>
+	            <p><a href="https://github.com/CMU-IDS-2020/fp-holmesandwatson">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-holmesandwatson/blob/main/annotated-05-839%2520Final%2520Report.pdf">Report </a></p>
+	            <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/zssRiSV5Xk0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+	        </li>
+            <li>
+                <p><h5 style="color:#B20000">Team classification-clarification: Christian Deverall, Laura Howard, Nathan Jen, Juliette Wong</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-classification_clarification">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-classification_clarification/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/R43LmLKpGRU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team ni-hao: Xiaoyu Sun, Liyun Tu, Shengli Zhu, Xi Chen</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-ni-hao">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-ni-hao/blob/main/annotated-Interactive_Happy_Moment_Analysis.pdf">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/JkfydvUsniI" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team airbnb-rats: Connie Ye, Lukas Hermann, Nur Yildirim, Shravya Bhat</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-airbnb-rats">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-airbnb-rats/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/q2vYsP4Vli8" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team zhihu: Jiayi Weng, Xinyue Chen, Xuanyi Li, Yeju Zhou</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-zhihu">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-zhihu/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/RfN-SCBx0ko" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team hu-giesa-erdolu: Emek Erdolu, Katherine Giesa, Meijie Hu</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp_hu_giesa_erdolu">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp_hu_giesa_erdolu/blob/main/annotated-IDS_FP_Report_Hu-Giesa-Erdolu.pdf">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/GsRI2XaufaU" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team index-out-of-bounds: Chuhan Feng, Jiecheng Xu, Jingyuan Li</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-index-out-of-bounds">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-index-out-of-bounds/blob/main/annotated-Toward_Disturbance_Resistant_Text_Style_Transfer-5.pdf">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/7b_nIxPO3Qk" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team ctqa: Jeffrey Huang, Aditya Shetty, Yuanyuan Wang, Yuanxin Wang</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-ctqa">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-ctqa/blob/main/05839_final_report.pdf">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/bq_zQa00pr0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team planning-for-the-best: Weiqin Wang, Yifan Song, Seungmyung Lee, Eileen Wang</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-planningforthebest">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-planningforthebest/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/lF8QAU9F19A" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team vectorization: Xinwen Liu, Xinyu Lin, Yuxi Luo, Shaobo Guan</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-vectorization">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-vectorization/blob/main/documents/Report.pdf">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/0jUtn4MI9HM" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team lyric-visualization: Paulina Davison, Peter Schaldenbrand</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-lyric-visualization">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-lyric-visualization/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/iQQ272pYOKQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team null-pointer-1: Ruoxin Huang, Xinyi Xu, Tianyang Zhan, Ziming He</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-null-pointer-1">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-null-pointer-1/blob/main/Final_Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/Yupw9EFK0v0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team carambola-of-evolution: Clay Yoo, Ihor Markevych</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-carambola-of-evolution">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-carambola-of-evolution/blob/main/annotated-05_389__final_report.pdf">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/zazEW4WGeMQ" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team numpy-tomato-and-potato: Zhanlin Sun, Tong Xiao, Andong Jing, Zixuan Zeng</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-numpy_tomato_and_potato">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-numpy_tomato_and_potato/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/7rRiUwCDvSo" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
+                <hr style="width:50%">
+            </li>
+            <li>
+                <p><h5 style="color:#B20000">Team stop-forest-fires-at-any-cost: Taylor Sullivan, Arpit Kumar, Sammy Hajomar, Joshua Vargas</h4></p>
+                <p><a href="https://github.com/CMU-IDS-2020/fp-stop_forest_fires_at_any_cost">Github Repo </a> | <a href="https://github.com/CMU-IDS-2020/fp-stop_forest_fires_at_any_cost/blob/main/Report.md">Report </a></p>
+                <p></br><iframe width="560" height="315" src="https://www.youtube.com/embed/5tH-p-fnzsw" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></p>
                 <hr style="width:50%">
             </li>
         </ol>
@@ -219,30 +158,6 @@
 </div><br>
 
 </div>
-<script>
-var ul = document.querySelector("ol"); 
-var temp = ul.cloneNode(true);
-
-
-function myFunction() {
-    var e = document.getElementById("dropdown");
-    var strUser = e.value;
-    var chance1 = new Chance(strUser);
-    var list = document.createElement("ol");
-    var indices = [...Array(temp.children.length).keys()];
-
-    var shuffled_indices = chance1.shuffle(indices);
-    nameList = "<li>" + temp.children[0].innerHTML + "</li>";
-	for (var i=0;i<shuffled_indices.length;i++) {
-	    nameList = "<li>" + temp.children[shuffled_indices[i]].innerHTML + "</li>";
-        list.innerHTML += nameList;
-	}
-	ul.parentNode.replaceChild(list, ul); 
-
-	document.getElementById('projects').style.display='block';
-	document.getElementById('dropdown-div').style.display='none';
-}
-</script>
 </body>
 </html>
 
